@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@oracle-database.cuox6gxifrao.us-east-1.rds.amazonaws.com:1521:ORCL
+    username: admin
+    password: Changeit
+    driver-class-name: oracle.jdbc.driver.OracleDriver

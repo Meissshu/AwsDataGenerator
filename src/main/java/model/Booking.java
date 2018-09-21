@@ -1,14 +1,16 @@
 package model;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 public class Booking {
 
     private int id;
     private int user_id;
     private int room_id;
-    private Date date;
-    private int durationInDays;
+    private Date from;
+    private Date to;
+
 
     @Override
     public String toString() {
@@ -16,8 +18,8 @@ public class Booking {
                 "id=" + id +
                 ", user_id=" + user_id +
                 ", room_id=" + room_id +
-                ", date=" + date +
-                ", durationInDays=" + durationInDays +
+                ", from=" + from +
+                ", to=" + to +
                 '}';
     }
 
@@ -76,38 +78,38 @@ public class Booking {
     }
 
     /**
-     * Returns date.
+     * Returns from.
      *
-     * @return value of date
+     * @return value of from
      */
-    public Date getDate() {
-        return date;
+    public Date getFrom() {
+        return from;
     }
 
     /**
-     * Sets date value.
+     * Sets from value.
      *
-     * @param date - value to set
+     * @param from - value to set
      */
-    public void setDate(Date date) {
-        this.date = date;
+    public void setFrom(Date from) {
+        this.from = from;
     }
 
     /**
-     * Returns durationInDays.
+     * Returns to.
      *
-     * @return value of durationInDays
+     * @return value of to
      */
-    public int getDurationInDays() {
-        return durationInDays;
+    public Date getTo() {
+        return to;
     }
 
     /**
-     * Sets durationInDays value.
+     * Sets to value.
      *
-     * @param durationInDays - value to set
+     * @param to - value to set
      */
-    public void setDurationInDays(int durationInDays) {
-        this.durationInDays = durationInDays;
+    public void setTo(Date to) {
+        this.to = to;
     }
 }
